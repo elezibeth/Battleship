@@ -12,10 +12,9 @@ namespace Battleship
         //member variables
 
         public string name;
-        public List<MarineVessel> fleet;
+        
         public GameBoard enemy;
-        public Submarine sub;
-        public Destroyer destroyer;
+       
         public bool turn;
         public Friendly friendly;
 
@@ -25,7 +24,7 @@ namespace Battleship
         {
             //method get hame
             GetNameOfPlayer();
-            AddShipsToFleet();
+            
             turn = false;
             friendly = new Friendly();
 
@@ -46,12 +45,7 @@ namespace Battleship
 
 
         //add ships to fleet list
-        public void AddShipsToFleet()
-        {
-            fleet = new List<MarineVessel>();
-            fleet.Add(sub);
-            fleet.Add(destroyer);
-        }
+        
         
 
 
