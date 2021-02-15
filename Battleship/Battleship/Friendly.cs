@@ -11,6 +11,7 @@ namespace Battleship
         public Submarine sub;
         public Destroyer destroyer;
         public List<MarineVessel> fleet;
+        public Battleship battleship;
 
         //ctor
         public Friendly()
@@ -26,6 +27,8 @@ namespace Battleship
         {
             sub = new Submarine();
             destroyer = new Destroyer();
+            battleship = new Battleship();
+            
 
         }
 
@@ -34,6 +37,7 @@ namespace Battleship
             fleet = new List<MarineVessel>();
             fleet.Add(sub);
             fleet.Add(destroyer);
+            fleet.Add(battleship);
         }
     }
 }
