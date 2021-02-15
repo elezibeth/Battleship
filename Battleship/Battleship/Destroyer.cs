@@ -6,32 +6,36 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Submarine : MarineVessel
+    class Destroyer : MarineVessel
     {
+
         public int length;
 
-        public int[,] submarine;
+        public int[,] destroyer;
 
-        public Submarine()
-            
+        public Destroyer()
+
         {
-            length = 3;
+            length = 2;
 
-            
-            type = "submarine";
+
+            type = "destroyer";
             CreateVessel();
-            
+
         }
 
 
         public void CreateVessel()
         {
             {
-                int[,] submarine = new int[length, width];
+                int[,] destroyer = new int[length, width];
 
             }
 
         }
+
+
+
 
 
 

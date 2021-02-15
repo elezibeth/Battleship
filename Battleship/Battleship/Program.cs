@@ -13,6 +13,8 @@ namespace Battleship
 
             Submarine boat = new Submarine();
             Console.WriteLine(boat.type);
+            Destroyer ship = new Destroyer();
+            Console.WriteLine(ship.type);
 
             Console.ReadLine();
 
