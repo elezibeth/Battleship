@@ -13,11 +13,11 @@ namespace Battleship
 
         public string name;
         public List<MarineVessel> fleet;
-        public GameBoard friendly;
         public GameBoard enemy;
         public Submarine sub;
         public Destroyer destroyer;
         public bool turn;
+        public Friendly friendly;
 
 
         //ctor
@@ -28,6 +28,7 @@ namespace Battleship
             InstantiateShips();
             AddShipsToFleet();
             turn = false;
+            friendly = new Friendly();
 
 
         }
@@ -57,6 +58,9 @@ namespace Battleship
             fleet.Add(sub);
             fleet.Add(destroyer);
         }
+        
+
+
         
 
         //instantiate enemy game board tracker for turns
