@@ -11,7 +11,7 @@ namespace Battleship
 
         public int length;
 
-        public int[,] destroyer;
+        public char[,] destroyer;
 
         public Destroyer()
 
@@ -21,6 +21,9 @@ namespace Battleship
 
             type = "destroyer";
             CreateVessel();
+            
+
+            
 
         }
 
@@ -28,11 +31,13 @@ namespace Battleship
         public void CreateVessel()
         {
             {
-                int[,] destroyer = new int[length, width];
+                char[,] destroyer = new char[2, 1];
+                
 
             }
 
         }
+       
 
 
 

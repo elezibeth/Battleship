@@ -10,7 +10,7 @@ namespace Battleship
     {
         public int length;
 
-        public int[,] submarine;
+        public char[,] submarine;
 
         public Submarine()
             
@@ -27,7 +27,7 @@ namespace Battleship
         public void CreateVessel()
         {
             {
-                int[,] submarine = new int[length, width];
+                char[,] submarine = new char[length, width];
 
             }
 
