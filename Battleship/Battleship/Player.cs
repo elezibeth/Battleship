@@ -15,13 +15,16 @@ namespace Battleship
         public List<MarineVessel> fleet;
         public GameBoard friendly;
         public GameBoard enemy;
+        public Submarine sub;
+        public Destroyer destroyer;
 
 
         //ctor
         public Player()
         {
             //method get hame
-            name = GetNameOfPlayer();
+            GetNameOfPlayer();
+            InstantiateShips();
 
 
         }
@@ -30,15 +33,22 @@ namespace Battleship
         public void GetNameOfPlayer()
         {
             Console.WriteLine("please enter your name.");
-            Console.ReadLine();
+            name = Console.ReadLine();
         }
 
         //methods
 
         //instantiate fleet's ships
-        
+        public void InstantiateShips()
+        {
+            sub = new Submarine();
+            destroyer = new Destroyer();
+
+        }
+
 
         //add ships to fleet list
+        
 
         //instantiate enemy game board tracker for turns
 
