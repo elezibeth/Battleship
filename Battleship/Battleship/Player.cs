@@ -25,6 +25,7 @@ namespace Battleship
             //method get hame
             GetNameOfPlayer();
             InstantiateShips();
+            AddShipsToFleet();
 
 
         }
@@ -48,6 +49,12 @@ namespace Battleship
 
 
         //add ships to fleet list
+        public void AddShipsToFleet()
+        {
+            fleet = new List<MarineVessel>();
+            fleet.Add(sub);
+            fleet.Add(destroyer);
+        }
         
 
         //instantiate enemy game board tracker for turns
