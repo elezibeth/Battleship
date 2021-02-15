@@ -25,7 +25,6 @@ namespace Battleship
         {
             //method get hame
             GetNameOfPlayer();
-            InstantiateShips();
             AddShipsToFleet();
             turn = false;
             friendly = new Friendly();
@@ -43,12 +42,7 @@ namespace Battleship
         //methods
 
         //instantiate fleet's ships
-        public void InstantiateShips()
-        {
-            sub = new Submarine();
-            destroyer = new Destroyer();
-
-        }
+       
 
 
         //add ships to fleet list
