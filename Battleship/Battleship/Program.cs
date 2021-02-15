@@ -11,7 +11,7 @@ namespace Battleship
         static void Main(string[] args)
         {
 
-            MarineVessel boat = new MarineVessel(5);
+            Submarine boat = new Submarine();
             Console.WriteLine(boat.type);
 
             Console.ReadLine();
