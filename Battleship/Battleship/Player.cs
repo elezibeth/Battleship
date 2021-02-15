@@ -17,6 +17,7 @@ namespace Battleship
         public GameBoard enemy;
         public Submarine sub;
         public Destroyer destroyer;
+        public bool turn;
 
 
         //ctor
@@ -26,6 +27,7 @@ namespace Battleship
             GetNameOfPlayer();
             InstantiateShips();
             AddShipsToFleet();
+            turn = false;
 
 
         }
