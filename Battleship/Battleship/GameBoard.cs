@@ -7,9 +7,14 @@ using System.Threading.Tasks;
 namespace Battleship
 {
     abstract class GameBoard
-    {//member variables
+    {   //member variables
+        public char[,] grid;
 
         //ctor
+        public GameBoard()
+        {
+            grid = new char[20, 20];
+        }
 
 
 
