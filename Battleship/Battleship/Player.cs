@@ -12,8 +12,9 @@ namespace Battleship
         //member variables
 
         public string name;
-        
-        public GameBoard enemy;
+
+        public EnemyFleet enemyBoard;
+        public Friendly friendlyBoard;
        
         public bool turn;
         public Friendly friendly;
@@ -26,7 +27,8 @@ namespace Battleship
             GetNameOfPlayer();
             
             turn = false;
-            friendly = new Friendly();
+            friendlyBoard = new Friendly();
+            enemyBoard = new EnemyFleet();
 
 
         }
@@ -39,12 +41,13 @@ namespace Battleship
         }
 
         //methods
+        
 
-        //instantiate fleet's ships
+        
        
 
 
-        //add ships to fleet list
+        
         
         
 

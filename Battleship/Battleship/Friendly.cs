@@ -13,12 +13,14 @@ namespace Battleship
         public List<MarineVessel> fleet;
         public Battleship battleship;
         public Carrier carrier;
+        public bool shipPresent;
 
         //ctor
         public Friendly()
         {
             InstantiateShips();
             AddShipsToFleet();
+            shipPresent = false;
 
         }
 
@@ -42,6 +44,13 @@ namespace Battleship
             fleet.Add(destroyer);
             fleet.Add(battleship);
             fleet.Add(carrier);
+        }
+        public void ShipPresent()
+        {
+            //if ship present, return true
+            shipPresent = true;
+            //method indicating turn complete
+            shipPresent = false;
         }
     }
 }
