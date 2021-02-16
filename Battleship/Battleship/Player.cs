@@ -11,11 +11,9 @@ namespace Battleship
 
         //member variables
 
-        public string name;
-
+        public string playerName;
         public EnemyFleet enemyBoard;
         public Friendly friendlyBoard;
-       
         public bool turn;
         public Friendly friendly;
 
@@ -25,10 +23,10 @@ namespace Battleship
         {
             //method get hame
             GetNameOfPlayer();
-            
             turn = false;
             friendlyBoard = new Friendly();
             enemyBoard = new EnemyFleet();
+            
 
 
         }
@@ -37,7 +35,9 @@ namespace Battleship
         public void GetNameOfPlayer()
         {
             Console.WriteLine("please enter your name.");
-            name = Console.ReadLine();
+            playerName = Console.ReadLine();
+        
+        
         }
 
         //methods

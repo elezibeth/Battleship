@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI.cs" />
     <Compile Include="Battleship.cs" />
     <Compile Include="Carrier.cs" />
     <Compile Include="Destroyer.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Friendly.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameBoard.cs" />
+    <Compile Include="human.cs" />
     <Compile Include="MarineVessel.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
